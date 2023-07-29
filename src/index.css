@@ -1,0 +1,252 @@
+body {
+  background-color: rgb(26, 25, 25); 
+  color: white; 
+}
+
+.mainbutton {
+  display: flex;
+}
+
+table {
+  width: 66%;
+  margin-left: 16%;
+  border-style: groove;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px white;
+  margin-top: 20px;
+}
+
+.submitbtn {
+  color: white;
+  border: white;
+  padding: 4px;
+  width: 100px;
+  cursor: pointer;
+  background-color: rgb(93, 156, 93);
+  padding: 10px;
+  margin: 10px;
+  font-weight: lighter;
+  font-size: 15px;
+  border-radius: 15px;
+  margin-top: 40px;
+}
+
+.deletbtn {
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: rgb(11, 125, 170);
+  color: white;
+  width: 100%;
+}
+
+.updatebtn {
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: rgb(49, 93, 235);
+  color: white;
+  width: 100%;
+}
+
+th {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  padding: 10px 10px 10px 10px;
+}
+
+td {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  padding: 10px 10px 10px 10px;
+  padding-left: 40px;
+}
+
+.editBtn {
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: rgb(235, 72, 235);
+  color: white;
+  width: 100%;
+}
+
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  padding: 1px;
+  font-size: 30px;
+}
+
+p {
+  color: rgb(235, 60, 162);
+  font-size: 20px;
+  text-align: center;
+}
+
+input {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.2rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+}
+
+&::placeholder {
+  color: transparent;
+}
+
+.wrapper {
+  width: 64%;
+  margin-left: 16%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.submitbtn:hover {
+  background-color: white;
+  color: green;
+}
+
+.updatebtn:hover {
+  background-color: white;
+  color: blue;
+}
+
+.deletbtn:hover {
+  background-color: white;
+  color: cadetblue;
+}
+
+.editBtn:hover {
+  background-color: white;
+  color: pink;
+}
+
+.mainContainer {
+  margin: auto;
+  width: 80%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  th {
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+  }
+
+  td {
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+    padding-left: 20px;
+    font-weight: lighter;
+  }
+
+  .wrapper {
+    width: 95%;
+    margin-left: 20px;
+  }
+
+  table {
+    width: 100%;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  th {
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+  }
+
+  td {
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+    padding-left: 20px;
+    font-weight: lighter;
+  }
+
+  .wrapper {
+    width: 93%;
+    margin-left: 5px;
+  }
+
+  table {
+    width: 97%;
+    margin-left: 3px;
+  }
+
+  .mainContainer {
+    padding: 4px;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  th {
+    font-size: 10px;
+    padding: 5px 5px 5px 5px;
+  }
+
+  td {
+    font-size: 10px;
+    padding: 5px 5px 5px 5px;
+    padding-left: 10px;
+    font-weight: lighter;
+  }
+
+  .wrapper {
+
+    width: 90%;
+    margin-left: 5px;
+  }
+
+  table {
+    width: 96%;
+    margin-left: 5px;
+  }
+
+  .submitbtn {
+    margin-top: 15px;
+  }
+
+  .mainContainer {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .deletbtn,.updatebtn,.editBtn {
+    font-size: 10px;
+    padding: 5px;
+    width: 100%;
+  }
+  input{
+    font-size: 10px;
+  }
+}
